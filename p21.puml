@@ -1,0 +1,18 @@
+@startuml
+object "<u>minnow:Ship</u>" as S {
+  name = "SS Minnow"
+  yearBuilt = "1967"
+}
+
+object "<u>evergreen:CargoShip</u>" as CS {
+  name = "Evergreen"
+  yearBuilt = "1997"
+  cargoCapacityInTonnage = 100000
+}
+
+object "<u>sunny:CruiseShip</u>" as CC {
+  name = "Sunny Seas"
+  yearBuilt = "2005"
+  maxNumberPassengers = 3000
+}
+@enduml

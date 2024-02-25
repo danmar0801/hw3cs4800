@@ -1,0 +1,36 @@
+@startuml
+object "<u>phpDemo1:Folder</u>" as PHPDemo1 {
+  name = "php_demo1"
+}
+
+object "<u>sourceFiles:Folder</u>" as SF {
+  name = "Source Files"
+}
+
+object "<u>includePath:Folder</u>" as IP {
+  name = "Include Path"
+}
+
+object "<u>remoteFiles:Folder</u>" as RF {
+  name = "Remote Files"
+}
+
+object "<u>phalcon:Folder</u>" as PH {
+  name = ".phalcon"
+}
+
+object "<u>cache:Folder</u>" as CA {
+  name = "cache"
+}
+
+object "<u>public:Folder</u>" as PU {
+  name = "public"
+}
+
+PHPDemo1 -down-> SF 
+PHPDemo1 -down-> IP  
+PHPDemo1 -down-> RF 
+SF -down-> PH 
+SF -down-> CA 
+SF -down-> PU 
+@enduml
