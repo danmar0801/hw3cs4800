@@ -27,10 +27,25 @@ object "<u>public:Folder</u>" as PU {
   name = "public"
 }
 
+object "<u>.htrouter:File</u>" as HR {
+  name = ".htrouter"
+}
+
+object "<u>.htacess:File</u>" as HA {
+  name = ".htacess"
+}
+
+object "<u>index.html:File</u>" as IH {
+  name = "index.html"
+}
+
 PHPDemo1 -down-> SF 
 PHPDemo1 -down-> IP  
 PHPDemo1 -down-> RF 
 SF -down-> PH 
 SF -down-> CA 
 SF -down-> PU 
+PU -down-> HR
+PU -down-> HA
+PU -down-> IH
 @enduml
